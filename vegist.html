@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegist Homepage</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'poppins', sans-serif;
+        }
+        
+        body{
+            background: rgb(250, 250, 250);
+            width: 100%;
+            
+
+        }
+        .full{
+            position: relative;
+        }
+      
+        .main{
+            width: 100%;
+            position:relative;
+        }
+
+        .free3{
+            display: flex;
+            justify-content: space-between;
+            height: 45px;
+            align-items: center;
+            font-weight: 600;
+            background: #272624;
+            color: #ffffff;
+            font-size: 15px;
+            
+        }
+        .free3 p {
+            letter-spacing: .7px;
+            margin-left: 120px;
+
+            
+        }
+        .free3 span{
+            color: #dd9c3a;
+        }
+        .free3 .btn3{
+            margin-right: 100px;
+        }
+        .free3 .btn3 a{
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            letter-spacing: .7px;
+
+        }
+        .free3 .btn3 a:hover{
+            color: #dd9c3a;
+
+        }
+        
+        .head-logo{
+            
+            display:flex;
+            justify-content:space-between;
+            height: 90px;
+            align-items: center;
+            background-color:rgb(255, 255, 255);
+            width: 100%;z-index: 1;
+            
+            
+            
+
+        }
+        .left .no .bx-headphone{
+            font-size: 20px;
+            
+        }
+        .left .no a{
+            text-decoration: none;
+            color: black;
+            font-weight:500;
+            letter-spacing: .7px;
+            margin-left: 120px;
+            
+        }
+        .center .logo span img{
+            justify-content: center;
+            align-items: center;
+          font-weight: 700;
+
+        }
+        .right .reg-log{
+            margin-right: 100px;
+        }
+        .right .reg-log a{
+            text-decoration: none;
+            padding: 7px;
+            border: 2px solid rgba(95, 93, 93, 0.6);
+            border-radius: 20px;
+            margin: 0 5px;
+
+
+            background:#ffffff;
+            color: #3d3b3b;
+            text-decoration: none;
+            border: none
+            ;
+            font-size: 22px;
+            font-weight: 600;
+
+           
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .right .reg-log a:hover{
+            color: #f1b355;
+        }
+        .right .reg-log{
+            display: flex;
+    justify-content: center;
+    margin-right: 20%;
+        }
+        .nav-search{
+            display:flex;
+            justify-content:space-between;
+            height: 70px;
+            align-items: center;
+            background-color:rgb(250, 250, 250);
+            width: 100%;
+            
+        }
+        .nav-search .menu{
+            margin-left: 110px;
+        }
+        .nav-search .search{
+            margin-right: 200px;
+        }
+        .menu li{
+            display: inline-block;
+
+        }
+        .menu li a{
+            text-decoration: none;
+            color: rgb(46, 44, 44);
+            padding: 10px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .search input{
+            width: 200px;
+            padding: 10px 15px;
+            background-color:rgb(250, 250, 250);
+            border: none;
+            outline: none;
+            box-shadow: 0 0 6px #cfcaca;
+        }
+        .search button i{
+            padding:10px ;
+            align-items: center;
+            margin-left: 5px;
+            position: absolute;
+            background-color: rgb(250, 250, 250);
+            border: none;
+            outline: none;
+            box-shadow: 0 0 6px #cfcaca;
+
+        }
+         button{
+            position: absolute;
+
+
+
+        }
+        .search input::placeholder{
+            font-size: 15px;
+        }
+        
+
+
+        .big{
+            background: rgb(250, 250, 250);
+            min-width:100%;
+
+        }
+        .big .img img{
+            width: 100%;
+            height: 470px;
+        }
+        .big .txt{
+            position: absolute;
+            top:50%;
+            left:10%;
+            
+        }
+        .txt p{
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #d64e18cb;
+        }
+        .txt h1{
+            font-size: 55px;
+            font-weight: 600;
+            color: #272625;
+            
+        }
+        .txt button{
+            background:#f0ab45;
+            color: #ffffff;
+            text-decoration: none;
+            border: none
+            ;
+            font-size: 15px;
+            font-weight: 600;
+
+            padding: 15px 30px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .txt a{
+            background:#f0ab45;
+            color: #ffffff;
+            text-decoration: none;
+            
+        }
+
+        .line{
+            background:rgb(250, 250, 250);
+            
+        }
+        .line2{
+            display:flex;
+            margin: auto;
+            justify-content: space-between;
+            margin-left: 90px;
+            margin-right: 90px;
+            background-color: rgb(250, 250, 250);
+            padding: 50px 0 30px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .line .item{
+            background: rgba(232, 240, 240, 0.959);
+            padding: 40px 50px 40px 35px;
+            border-radius: 5px;
+
+        }
+        .item a{
+            text-decoration: none;
+            
+        }
+        .item span{
+            color: #272624;
+                text-decoration: none;
+                text-align: center;
+                align-self: center;
+                margin-left: 20px;
+        }
+
+
+        .slide{
+            background-color: rgb(250, 250, 250);
+        }
+        .banner{
+            background-color: rgb(250, 250, 250);
+            margin-left: 80px;
+            margin-right: 80px;
+            padding-bottom: 50px;
+        }
+        .banner .banner-wrap{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            
+        }
+        .banner-wrap ul{
+            display: flex;
+            
+
+        }
+        .contant{
+            position: relative;
+            margin-top: 50px;
+           
+          
+        }
+        .contant .text-left{
+            position:absolute;
+            top: 22%;
+            margin-left: 15px;
+                        
+
+        }
+        .text-left a{
+            color: #d39436;
+            
+        }
+        .text-left p,h3,a{
+             margin: 10px;            
+        }
+        .text-left a{
+            text-decoration: none;
+           
+        }
+        .contant a img{
+            
+            width: 350px;
+            box-shadow: 0 0 4px rgba(124, 123, 123, 0.486);
+        }
+
+        .sub-line{
+            position: relative;
+            width: 100%;
+            background: rgb(250, 250, 250);
+            padding-top: 50px;
+            padding-bottom: 30px;
+
+        }
+        .im{
+            background: rgb(250, 250, 250);
+            position: relative;
+
+        }
+        .im img{
+            width: 100%;
+        }
+        .con{
+            position: absolute;
+            text-align: center;
+            align-items: center;
+            top: 15%;
+            left: 39%;
+            
+        }
+        .con h2,p{
+            padding-bottom: 10px;
+        }
+
+        .con input{
+           width: 100%;
+           align-items: center;
+           padding: 10px;
+           border: 2px rgba(255,255,255,.2);
+           border-radius: 4px;
+           font-size: 15px;
+        }
+
+        .con button{
+            padding: 7px 15px 7px 15px;
+            left: 32%;
+            background:#f0ab45;
+            color: #ffffff;
+            text-decoration: none;
+            border: none
+            ;
+            font-size: 15px;
+            font-weight: 600;
+
+           
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .footer{
+            background-color: rgb(250, 250, 250);
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+            margin: 0 40px;
+        }
+        .footer .itm{
+            display: inline-table;
+
+
+        }
+        .itm p{
+            color: #383636e0;
+            line-height: 30px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .footer .itm .itm2 a{
+            color: #383636;
+            text-decoration: none;
+            line-height: 30px;
+            margin-left: 0px;
+        }
+        .footer .itm .itm2 a:hover{
+            color: #dd9c3a;
+        }
+        .itm .loc a{
+            color: #272625;
+            text-decoration: none;
+
+        }
+        .itm .loc a:hover{
+            color: #d39436;
+        }
+        .itm h4{
+            font-size: 16px;
+        }
+
+        
+        @media only screen and (max-width:600px) and (orientation: portrait){
+            .free3 p{
+        margin-left: 0;
+        font-size: small;
+    }
+    .free3 .btn3{
+        margin-right: 0px;
+        display: flex;
+    }
+    .free3 .btn3 a{
+        margin: 0px 5px;
+
+    }
+    .free3{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .free3 p{
+        display: none;
+    }
+    .reg-log {
+      display: flex;
+        margin-right: 0px;
+    }
+    .head-logo{
+        display: flex;
+        justify-content:space-around;
+
+        
+    }
+    .nav-search .menu{
+          display: none;
+        }
+        .search{
+            margin-left: 20px;
+        }
+       
+    .head-logo .left{
+        display: none;
+    }
+   
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .big .img img{
+            width: 100%;
+            height: 250px;
+        }
+        .big .txt{
+          top:40%;
+        }
+        .txt p{
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 600;
+         
+        }
+        .txt h1{
+            font-size: 34px;
+            font-weight: 600;
+            color: #272625;
+            
+        }
+        .txt button{
+            font-size: 14px;
+            padding: 7px 14px;
+
+        }
+
+        .line2{
+            display: block;
+            justify-content: center;
+            padding: 25px 0 15px;
+            margin:10px 140px 10px;
+
+        }
+        .item{
+            margin-bottom: 20px;
+        }
+        .banner ul{
+            flex-direction: column;
+            align-items: center;
+        }
+        .banner{
+            
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 50px;
+        }
+
+        .im img{
+            width: 100%;
+            height: 230px;
+        }
+
+        .con{
+            top: 15%;
+            left: 20%;
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="full">
+        <ul>
+    <li><div class="main">
+        
+        <div class="free3">
+            
+                <p><span>Free shipping</span> orders from all item</p>
+            
+            <div class="btn3">
+                <a href="">My order</a>
+                <a href="">Track order</a>
+                <a href="">Contact us</a>
+            </div>
+        </div>
+        <div class="head-logo">
+
+
+            <div class="left">
+                <div class="no"><a href=""><i class='bx bx-headphone' style='color:#dd9c3a'  ></i> (+14)22465 323255</a></div>
+
+            </div>
+            <div class="center">
+                <div class="logo">
+                    <span><img src="vegist-removebg-preview.png" alt=""></span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="reg-log">
+                    <a href="veg-reg.html" target=""><i class="fa-regular fa-user"></i></a>
+                    <a href="wish.html" target="" ><i class="fa-regular fa-heart"></i></a>
+                    <a href="cart-vegi.html" target="" ><i class='bx bx-shopping-bag' ></i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </li>
+
+
+
+       <li> <div class="nav-search">
+            <div class="menu">
+                <ul>
+                    <li><a href="vegist.html">HOME</a></li>
+                    <li><a href="shop.html" target="_parent">SHOP</a></li>
+                    <li><a href="">COLLECTION</a></li>
+                    <li><a href="pages-1.html">PAGES</a></li>
+                    <li><a href="blog.html">BLOGS</a></li>
+                    <li><a href="pages-2.html">BUY VEGIST</a></li>
+
+                </ul>
+
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search our store">
+                <button><i class='bx bx-search'></i></button>
+            </div>
+        </div>
+    </li>
+    </div>
+</ul>
+
+    <div class="big">
+
+        <div class="img">
+            <img src="big1.webp" alt="">
+        </div>
+
+        <div class="txt">
+            <p>Top selling!</p>
+            <h1>Delicious<br>chocolate</h1>
+            <button><a href="">Shop now</a></button>
+        </div>
+    </div>
+
+    <div class="line">
+        <div class="line2">
+
+        <div class="item">
+            <a href="">
+                <img src="cat2_60x60_crop_center.png" alt=""><br>
+
+                <span>Bagel</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="cat3_60x60_crop_center.png" alt=""><br>
+                <span>Cupcake</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="cat4_60x60_crop_center.png" alt=""><br>
+                <span>Biscuite</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="cat5_60x60_crop_center.png" alt=""><br>
+                <span>Sandwich</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="cat7_60x60_crop_center.png" alt=""><br>
+                <span>Bread</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="cat8_60x60_crop_center.png" alt=""><br>
+                <span>Cake</span>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <div class="slide">
+        <div class="banner">
+            <ul class="banner-wrap">
+
+
+                <li class="banner123">
+                    <div class="contant">
+                        <a href="">
+                            <img src="banner-1.webp" alt="">
+                        </a>
+                        <div class="text-left">
+                            <p>Food taste</p>
+                            <h3 style="color: #232323;">Fresh bread<br> bakery</h3>
+                            <a href="" class="banner-btn">SHOP NOW</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="banner123">
+                    <div class="contant">
+                        <a href="">
+                            <img src="banner-2.webp" alt="">
+                        </a>
+                        <div class="text-left">
+                            <p>Only today</p>
+                            <h3 style="color: #232323;">100% fresh & hand <br>made</h3>
+                            <a href="" class="banner-btn">SHOP NOW</a>
+                        </div>
+                    </div>
+                </li>
+
+
+
+                <li class="banner123">
+                    <div class="contant">
+                        <a href="">
+                            <img src="banner-3.webp" alt="">
+                        </a>
+                        <div class="text-left">
+                            <p>Premium quality</p>
+                            <h3 style="color: #232323;">Bread & sweet bakery      
+
+                               <br> shop</h3>
+                            <a href="" class="banner-btn">SHOP NOW</a>
+                        </div>
+                    </div>
+                </li>
+
+                
+            </ul>
+        </div>
+        </div>
+
+        <div class="sub-line">
+            <div class="im">
+                <img src="newsletter-bg.webp" alt="">
+                <div class="con">
+                    <h2>Get the latest deal
+                    </h2>
+                    <p>Receive 20% off coupon for first shopping
+                    </p>
+                    <input type="email" name="search" id="" placeholder="Enter your email address"><br>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+   
+    
+        <footer class="footer">
+
+            <div class="itm">
+                <img src="vegist-removebg-preview.png" alt="">
+                <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. <br>Veniam est neque quos </p>
+                <img src="gpay.png" alt="">
+
+            </div>
+
+            <div class="itm">
+                <div class="itm2">
+                <h4>Services</h4>
+                <br>
+                <a href="">About vegist</a><br>
+                <a href="">Faq's</a><br>
+                <a href="">Contact us</a><br>
+                <a href="">News</a><br>
+                <a href="">Store location</a><br>
+            </div>
+            </div>
+            <div class="itm">
+                <div class="itm2">
+                <h4>Privacy & terms</h4>
+                <br>
+                <a href="">Payment policy</a><br>
+                <a href="">Privacy policy</a><br>
+                <a href="">Return policy</a><br>
+                <a href="">Shipping policy</a><br>
+                <a href="">Terms & conditions</a><br>
+            </div>
+            </div>
+            <div class="itm">
+                <div class="itm2">
+                <h4>My account</h4>
+                <br>
+                <a href="">My account</a><br>
+                <a href="">My cart</a><br>
+                <a href="">Order history</a><br>
+                <a href="">My wishlist</a><br>
+                <a href="">My address</a><br>
+            </div>
+            </div>
+            <div class="itm">
+                <h4>Location</h4>
+                <br>
+                <div class="loc">
+                <p><i class="fa-solid fa-location-dot" style='color:#dd9c3a'  ></i> 7882 Longbranch rd <br>wooster parck lbans, <br>australia</p>
+                </div>
+
+                <div class="loc">
+                    <a href=""><i class="fa-solid fa-phone"  style='color:#dd9c3a' ></i> +14 654 1234 5448</a><br>
+                    <a href="">support@gmail.com</a>
+                </div>
+
+            </div>
+        </footer>
+
+    
+</body>
+</html>
